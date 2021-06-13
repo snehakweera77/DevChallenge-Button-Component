@@ -106,7 +106,7 @@
 	background: rgba(41, 98, 255, 0.1);
 }
 
-.reusableButton .outline-hover{
+.reusableButton .outline-hover {
 	border: 1px solid var(--button-color-bg-primary);
 	color: var(--button-color-bg-primary);
 	box-shadow: unset;
@@ -194,4 +194,3 @@
 .reusableButton .lg:focus {
 	background-color: var(--button-color-bg-hover-primary);
 }
-
