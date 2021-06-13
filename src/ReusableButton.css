@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?amily=Ubuntu+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap");
+
+.reusableButton {
+	--font-main: "Noto Sans Jp", sans-serif;
+	--font-alt: "Ubuntu Mono", sans-serif;
+	--color-bg-default: hsla(0, 0%, 88%, 1);
+
+	--button-color-bg-primary: hsla(231, 99%, 62%, 1);
+	--button-color-bg-default: hsla(0, 0%, 88%, 1);
+	--button-color-bg-secondary: hsla(199, 18%, 33%, 1);
+	--button-color-bg-danger: hsla(0, 65%, 51%, 1);
+
+	--button-color-bg-hover-primary: hsla(223, 100%, 40%, 1);
+	--button-color-bg-hover-default: hsla(0, 0%, 68%, 1);
+	--button-color-bg-hover-secondary: hsla(198, 35%, 17%, 1);
+	--button-color-bg-hover-danger: hsla(357, 100%, 30%, 1);
+
+	--button-text-color-primary: hsla(0, 0%, 25%, 1);
+	--button-text-color-secondary: white;
+}
+
+/* DEFAULT BUTTON */
+
+.reusableButton button {
+	outline: none;
+	border: none;
+
+	color: var(--button-text-color-primary);
+	padding: 0.5rem 1rem;
+	border-radius: 0.5rem;
+	background-color: var(--color-bg-default);
+
+	font-size: 0.8rem;
+	font-weight: 600;
+
+	transition: background-color 0.3s ease-in-out;
+	box-shadow: 0px 2px 3px 0px rgba(51, 51, 51, 0.2);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.reusableButton .color-primary {
+	color: white;
+	background-color: var(--button-color-bg-primary);
+}
+
+.reusableButton .color-primary:hover,
+.reusableButton .color-primary:focus {
+	background-color: var(--button-color-bg-hover-primary);
+}
+
+.reusableButton .color-secondary {
+	color: white;
+	background-color: var(--button-color-bg-secondary);
+}
+
+.reusableButton .color-secondary:hover,
+.reusableButton .color-secondary:focus {
+	background-color: var(--button-color-bg-hover-secondary);
+}
+
+.reusableButton .color-danger {
+	color: white;
+	background-color: var(--button-color-bg-danger);
+}
+
+.reusableButton .color-danger:hover,
+.reusableButton .color-danger:focus {
+	background-color: var(--button-color-bg-hover-danger);
+}
+
+.reusableButton button:hover,
+.reusableButton button:focus {
+	background: var(--button-color-bg-hover-default);
+}
+.reusableButton .hover {
+	background: var(--button-color-bg-hover-default);
+}
+.reusableButton .primary-hover {
+	color: white;
+	background-color: var(--button-color-bg-hover-primary);
+}
+.reusableButton .secondary-hover {
+	color: white;
+	background-color: var(--button-color-bg-hover-secondary);
+}
+.reusableButton .danger-hover {
+	color: white;
+	background-color: var(--button-color-bg-hover-danger);
+}
+/* OUTLINE BUTTON */
+
+.reusableButton .outline {
+	border: 1px solid var(--button-color-bg-primary);
+	color: var(--button-color-bg-primary);
+	background-color: transparent;
+	box-shadow: unset;
+}
+
+.reusableButton .outline:hover,
+.reusableButton .outline:focus {
+	background: rgba(41, 98, 255, 0.1);
+}
+
+.reusableButton .outline-hover{
+	border: 1px solid var(--button-color-bg-primary);
+	color: var(--button-color-bg-primary);
+	box-shadow: unset;
+	background: rgba(41, 98, 255, 0.1);
+}
+/* TEXT BUTTON */
+
+.reusableButton .text {
+	color: var(--button-color-bg-primary);
+	background-color: transparent;
+	box-shadow: unset;
+}
+
+.reusableButton .text:hover,
+.reusableButton .text:focus {
+	background: rgba(41, 98, 255, 0.1);
+}
+.reusableButton .text-hover {
+	background: rgba(41, 98, 255, 0.1);
+	box-shadow: unset;
+	color: var(--button-color-bg-primary);
+}
+/* DISABLESHADOW BUTTON */
+
+.reusableButton .disableShadow {
+	box-shadow: unset;
+}
+
+.reusableButton .disableShadow:hover,
+.reusableButton .disableShadow:focus {
+	background-color: var(--button-color-bg-hover-primary);
+}
+
+/* DISABLED BUTTON */
+
+.reusableButton .disabled {
+	box-shadow: unset;
+	color: #9e9e9e;
+}
+
+/* ICON BUTTON */
+.reusableButton .button-material-icon {
+	color: var(--button-text-color-secondary);
+	background-color: var(--button-color-bg-primary);
+}
+
+.reusableButton .button-material-icon:focus,
+.reusableButton .button-material-icon:hover {
+	background-color: var(--button-color-bg-hover-primary);
+}
+
+.reusableButton button span {
+	font-size: inherit;
+}
+
+.reusableButton .disabled:hover,
+.reusableButton .disabled:focus {
+	background-color: transparent;
+}
+
+/* SIZEABLE BUTTON */
+.reusableButton .sm {
+	padding: 0.4rem 0.75rem;
+	color: var(--button-text-color-secondary);
+	background-color: var(--button-color-bg-primary);
+}
+
+.reusableButton .md {
+	padding: 0.6rem 0.9rem;
+	color: var(--button-text-color-secondary);
+	background-color: var(--button-color-bg-primary);
+}
+
+.reusableButton .lg {
+	padding: 0.8rem 1.3rem;
+	color: var(--button-text-color-secondary);
+	background-color: var(--button-color-bg-primary);
+}
+
+.reusableButton .sm:hover,
+.reusableButton .sm:focus,
+.reusableButton .md:hover,
+.reusableButton .md:focus,
+.reusableButton .lg:hover,
+.reusableButton .lg:focus {
+	background-color: var(--button-color-bg-hover-primary);
+}
+
